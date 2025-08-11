@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Mangali | CS Undergrad & Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/charts.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">NITHIN MANGALI</div>
+            <div class="right">
+                <ul id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#certifications-hobbies">More</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="firstsec">
+            <div class="leftsec">
+                Hello, I'm
+                <span class="namespan">Nithin Mangali</span>
+                <div>Computer Science Undergraduate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button id="resumeButton" class="btn">
+                        <i class="fas fa-file-alt"></i> Resume
+                    </button>
+                    <a href="https://github.com/nithin849" class="btn" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="rightsec">
+                <img src="portfolio_nani.jpg" alt="Nithin Mangali" id="portfolio-image">
+            </div>
+        </section>
+        <section id="about" class="secondsec">
+            <h1>About Me</h1>
+            <p>I’m a dedicated Computer Science undergraduate at B V Raju Institute of Technology, skilled in Java, Python, and frontend development. With a strong foundation in problem-solving, I’ve tackled over 310 challenges on LeetCode, sharpening my analytical and coding abilities.</p>
+            <p>Outside the world of code, I’m a passionate cricket player and an avid movie enthusiast—interests that keep me balanced, inspired, and creative in approaching problems from fresh angles.</p>
+            <p>Currently, I’m broadening my expertise into DevOps, driven by a commitment to continuous learning and staying ahead in the ever-evolving tech landscape.</p>
+        </section>
+        <!-- Add this after your About section -->
+<section id="skills" class="skills-section">
+    <h1>My Skills</h1>
+    <div class="skills-container">
+        <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">Python</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Web Development -->
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-item">
+                    <div class="skill-name">HTML/CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">React.js</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Database -->
+            <div class="skill-category">
+                <h3>Database</h3>
+                <div class="skill-item">
+                    <div class="skill-name">MySQL</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- devops started -->
+             <div class="skill-category">
+                <h3>started learning Devops</h3>
+                <div class="skill-item">
+                    <div class="skill-name">Linux</div>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Add this after Skills section -->
+<section id="certifications-hobbies" class="extras-section">
+    <div class="extras-container">
+        <!-- Certifications -->
+        <div class="extras-card">
+            <h2><i class="fas fa-certificate"></i> Certifications</h2>
+            <ul>
+                <li>Java Programming - Oracle University (2023)</li>
+                <li>Web Development Bootcamp - Udemy (2023)</li>
+                <li>Python for Data Science - Coursera (2022)</li>
+            </ul>
+        </div>
+        
+        <!-- Hobbies -->
+        <div class="extras-card">
+            <h2><i class="fas fa-heart"></i> Hobbies</h2>
+            <ul>
+                <li>Cricket Enthusiast</li>
+                <li>Movie Buff</li>
+                <li>Problem Solving (LeetCode)</li>
+                <li>Tech Blogging</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- Add this after Skills section -->
+<section id="coding-stats" class="coding-stats-section">
+    <div class="stats-container">
+        <!-- GitHub Language Wheel -->
+        <div class="stat-card">
+            <h2>My Code Language Distribution</h2>
+            <div class="chart-container">
+                <canvas id="githubLanguageChart"></canvas>
+                <div class="chart-center">
+                    <!-- <img src="portfolio_nani.jpg" alt="Your Avatar" class="avatar"> -->
+                    <div class="total-repos">15+ Repos</div>
+                </div>
+            </div>
+            <div class="language-legend"></div>
+        </div>
+
+        <!-- LeetCode Efficiency -->
+        <div class="stat-card">
+            <h2>My LeetCode Performance</h2>
+            <div class="chart-container">
+                <canvas id="leetcodeChart"></canvas>
+            </div>
+            <div class="stats-grid">
+                <div class="mini-stat">
+                    <div class="stat-value">310+</div>
+                    <div class="stat-label">Problems Solved</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">98%</div>
+                    <div class="stat-label">Easy Beats</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">85%</div>
+                    <div class="stat-label">Medium Beats</div>
+                </div>
+                <div class="mini-stat">
+                    <div class="stat-value">210</div>
+                    <div class="stat-label">Easy Solved</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+        <section id="project" class="thirdsec">
+            <h1>My Projects</h1>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/paddy-Disease">Paddy Disease Detection using Vision Transformers</a></h3>
+                <p>Today Paddy, being a critical crop in many countries, often gets affected by various diseases which reduce yield and quality. This project helps farmers and researchers detect diseases early by analyzing leaf images and identifying the type of disease.</p>
+                <p>The model is integrated into a simple and interactive Streamlit web interface for easy accessibility and use.</p>
+                <p><span class="tech-label">Technologies:</span> Python, Vision Transformers, Streamlit, Deep Learning</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/Electricity_bill_project">Electricity Bill Management System</a></h3>
+                <p>A comprehensive Java application featuring GUI development with Swing and MySQL database integration. The system streamlines billing processes and shift management for utility providers.</p>
+                <p><span class="tech-label">Technologies:</span> Java, Swing, MySQL</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/Hate_Speech_Detection">Hate Speech Detection</a></h3>
+                <p>An NLP solution that classifies text content to identify harmful language patterns. This project demonstrates my skills in Python and natural language processing techniques.</p>
+                <p><span class="tech-label">Technologies:</span> Python, NLP</p>
+            </div>
+            <div class="project-card">
+                <h3><a href="https://github.com/nithin849/NumberGame">Number Game</a></h3>
+                <p>A beginner-friendly Java application that showcases fundamental programming concepts through an interactive number guessing game.</p>
+                <p><span class="tech-label">Technologies:</span> Java</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contactsec">
+            <h1>Get In Touch</h1>
+            <div class="contact-info">
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:mnithinmangali@gmail.com">mnithinmangali@gmail.com</a>
+                </div>
+                <div>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/nithin-mangali-50ba0924b/" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div>
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/nithin849" target="_blank">GitHub Profile</a>
+                </div>
+                <div>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/nithin_849/" target="_blank">Instagram Profile</a>
+                </div>
+                <div>
+                    <i class="fas fa-code"></i>
+                    <a href="https://leetcode.com/u/nithin_849/" target="_blank">LeetCode Profile (310+ Problems Solved)</a>
+                </div>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <h2>Send me a message</h2>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required placeholder="What would you like to discuss?" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+                <div id="formStatus"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nithin Mangali. All rights reserved.</p>
+    </footer>
+
+    <!-- Typed.js for animated text -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
