@@ -1310,38 +1310,6 @@ nav {
     top: -3px;
 }
 
-/* Add to your existing :root */
-:root {
-    --primary: #2563eb;
-    --secondary: #f59e0b;
-    --dark: #1e293b;
-    --light: #f8fafc;
-    --highlight: #f9a826;
-    --pink-accent: #ff6b6b;
-    --bg-color: #ffffff;
-    --text-color: #1e293b;
-    --card-bg: #ffffff;
-    --section-bg: #f8fafc;
-    --header-bg: rgba(255, 255, 255, 0.95);
-    --footer-bg: #1e293b;
-}
-
-[data-theme="dark"] {
-    --primary: #3b82f6;
-    --secondary: #f59e0b;
-    --dark: #f8fafc;
-    --light: #1e293b;
-    --highlight: #f9a826;
-    --pink-accent: #ff6b6b;
-    --bg-color: #121212;
-    --text-color: #f8fafc;
-    --card-bg: #1e1e1e;
-    --section-bg: #121212;
-    --header-bg: rgba(26, 26, 26, 0.95);
-    --footer-bg: #000000;
-}
-
-
 /* Coding Stats Section */
 .coding-stats-section {
     padding: 6rem 5%;
@@ -2024,4 +1992,38 @@ nav {
         align-items: center;
         gap: 1rem;
     }
+}
+
+
+/* ===== FINAL OVERRIDE: Demo Button ===== */
+.project-links .demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    border: 1px solid rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.project-links .demo-btn i {
+    color: #e53935;
+    font-size: 0.85rem;
+}
+
+.project-links .demo-btn:hover {
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: white;
+    border-color: #7c3aed;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(124, 58, 237, 0.35);
+}
+
+.project-links .demo-btn:hover i {
+    color: white;
 }
