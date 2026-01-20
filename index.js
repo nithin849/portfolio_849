@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     datasets: [
                         {
                             label: 'Problems Solved',
-                            data: [210, 97, 3],
+                            data: [234, 117, 4],
                             backgroundColor: [
                                 'rgba(40, 167, 69, 0.8)',
                                 'rgba(13, 110, 253, 0.8)',
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         },
                         {
                             label: 'Runtime Beats',
-                            data: [98, 85, 32],
+                            data: [98.41, 87.58, 40.98],
                             backgroundColor: [
                                 'rgba(40, 167, 69, 0.4)',
                                 'rgba(13, 110, 253, 0.4)',
@@ -245,7 +245,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.querySelector('.language-legend');
         if (container) {
             const items = [
-                { label: 'Java', color: '#FF6B35', value: '35%' },
+                { label: 'Java', color: '#FF6B35', value: '45%' },
                 { label: 'Python', color: '#2563EB', value: '25%' },
                 { label: 'JavaScript', color: '#FFD166', value: '20%' },
                 { label: 'HTML/CSS', color: '#EF476F', value: '15%' },
@@ -328,3 +328,22 @@ if (contactForm) {
     });
 }
 });
+
+
+
+
+
+const reveals = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            }
+        });
+    },
+    { threshold: 0.15 }
+);
+
+reveals.forEach(el => observer.observe(el));
